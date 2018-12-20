@@ -5,7 +5,6 @@
     </head>
     
     <body bgcolor="black">
-        <center>
             <br>
             <h1>
                 <B><font color="white" style="font-size:70"> Kalkylator med JavaScript</font></B>
@@ -15,10 +14,9 @@
             <div style="width:260px; background: yellow;">
     
                 <form name="calculator">
-    
+
                     <input name="display" placeholder="0" style="width:250px; height: 60px;
                         text-align:right; font-size: 30; border-radius: 8px; margin: 5px;" />
-    
                     <br>
                     <input type="button" value="7" onClick="document.calculator.display.value +='7'" style="width: 60px; height:60px; font-size:30; border-radius: 8px; margin: 3px;" />
                     <input type="button" value="8" onClick="document.calculator.display.value +='8'" style="width: 60px; height:60px; font-size:30; border-radius: 8px;" />
@@ -42,51 +40,9 @@
                     <br>
                     <input type="button" value="=" onClick="document.calculator.display.value = eval(document.calculator.display.value)" style="width:120px; height: 60px; font-size: 30; border-radius; 8px; margin: 3px;" />
                     <input type="button" value="C" onClick="btnclear()" style="width:120px; height: 60px; font-size:30; border-radius:8px" />
-    
                 </form>
-    
                 <hr size=20 color="black">
-    
             </div>
-    
-    
-            <script>
-                function btnplus() {
-                    document.calculator.display.value += "+";
-                    document.calculator.display.style.textAlign = "right";
-                }
-    
-                function btnsub() {
-                    document.calculator.display.value += "-";
-                    document.calculator.display.style.textAlign = "right";
-                }
-    
-                function btnmult() {
-                    document.calculator.display.value += "*";
-                    document.calculator.display.style.textAlign = "right";
-                }
-    
-                function btnMod() {
-                    document.calculator.display.value += "%";
-                    document.calculator.display.style.textAlign = "right";
-                }
-    
-                function btndot() {
-                    document.calculator.display.value += ".";
-                    document.calculator.display.style.textAlign = "right";
-                }
-    
-                function btndiv() {
-                    document.calculator.display.value += "/";
-                    document.calculator.display.style.textAlign = "right";
-                }
-    
-                function btnclear() {
-                    document.calculator.display.value = "";
-                    document.calculator.display.style.textAlign = "right";
-                }
-            </script>
-        </center>
+            <script src="script.js"></script>
     </body>
-    
 </html>
